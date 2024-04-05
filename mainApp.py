@@ -111,7 +111,6 @@ for message in st.session_state.messages:
 
     
 def processing(prompt):
-
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.markdown(prompt)
@@ -131,9 +130,8 @@ def processing(prompt):
         response = st.write_stream(stream)
     st.session_state.messages.append({"role": "assistant", "content": response})
 
-prompt = st.chat_input("Enter your question here")
-
 #Processing Main
+prompt = st.chat_input("Enter your question here")
 
 if st.session_state.submit and st.session_state.audio_transcription is not None:
     prompt=st.session_state.audio_transcription.text
