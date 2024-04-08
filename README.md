@@ -18,26 +18,28 @@
 
 # Deploment to Azure App Service.
 
-## Create App Service in Azure
+## Step 1 - Create App Service in Azure
 
 ![Alt text](/images/AppService.png)
 
-## Provide the Github location while deployment
+
+## Step 2 - Provide the Github location while deployment
 
 ![Alt text](/images/Github-setup.png)
 
-## App Service is created. Validate deployment status from github action or Deployment center in App Service
+
+## Step 3 - App Service is created. Validate deployment status from github action or Deployment center in App Service
 
 ![Alt text](/images/GithubDeployment.png)
 
-## Update enviornment variables
+## Step 4 - Update enviornment variables
 
 ![Alt text](/images/EnvVariables.png)
 
-## Update Statup Command in Configuration in App Service
+## Step 5 - Update Statup Command in Configuration in App Service
 
 ![Alt text](/images/updateconfig.png)
 
-## Run it by Selecting Default Domain in App Service.
+## Step 6 - Run and validate by Selecting Default Domain in App Service.
 
 ![Alt text](/images/DeployedApp.png)
